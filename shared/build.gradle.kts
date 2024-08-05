@@ -38,10 +38,17 @@ kotlin {
         // Configure the Pod name here instead of changing the Gradle project name
         name = "MyCocoaPod"
 
+        pod("powersync-sqlite-core") {
+            linkOnly = true
+        }
+
         framework {
             // Required properties
             // Framework name configuration. Use this property instead of deprecated 'frameworkName'
             baseName = "MyFramework"
+
+            isStatic = true
+            export("com.powersync:core")
         }
 
         // Maps custom Xcode configuration to NativeBuildType
@@ -52,6 +59,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             // put your Multiplatform dependencies here
+            api("com.powersync:core:1.0.6")
         }
     }
 }
