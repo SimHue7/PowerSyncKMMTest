@@ -1,0 +1,23 @@
+PODS:
+  - MyCocoaPod (1.0):
+    - powersync-sqlite-core
+  - powersync-sqlite-core (0.1.6)
+
+DEPENDENCIES:
+  - MyCocoaPod (from `../shared`)
+
+SPEC REPOS:
+  trunk:
+    - powersync-sqlite-core
+
+EXTERNAL SOURCES:
+  MyCocoaPod:
+    :path: "../shared"
+
+SPEC CHECKSUMS:
+  MyCocoaPod: 7cc9e188fc246ff828f7c1d9a785cd31b08b0af0
+  powersync-sqlite-core: 4c38c8f470f6dca61346789fd5436a6826d1e3dd
+
+PODFILE CHECKSUM: 331c26a6965e1cd290f9c57e08ab5ed4ef49fb72
+
+COCOAPODS: 1.14.2

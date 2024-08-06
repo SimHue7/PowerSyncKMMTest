@@ -33,6 +33,8 @@ kotlin {
         version = "1.0"
         summary = "Some description for a Kotlin/Native module"
         homepage = "Link to a Kotlin/Native module homepage"
+        podfile = project.file("../iosApp/Podfile")
+        ios.deploymentTarget = "15.2"
 
         // Optional properties
         // Configure the Pod name here instead of changing the Gradle project name
@@ -45,7 +47,7 @@ kotlin {
         framework {
             // Required properties
             // Framework name configuration. Use this property instead of deprecated 'frameworkName'
-            baseName = "MyFramework"
+            baseName = "Shared"
 
             isStatic = true
             export("com.powersync:core")
