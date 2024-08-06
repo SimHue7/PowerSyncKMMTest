@@ -59,7 +59,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             // put your Multiplatform dependencies here
-            api("com.powersync:core:1.0.6")
+            api("com.powersync:core:0.0.1-ALPHA15")
         }
     }
 }
